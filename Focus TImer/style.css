@@ -1,0 +1,190 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+
+   --bg-color: white;
+   --font-bory: 'Roboto', sans-serif;
+   --font-color: hsla(240, 6%, 21%, 1);
+   --bg-button-first: hsla(240, 9%, 89%, 1);
+   --bg-button-first-hover: rgb(213, 213, 213);
+   --bg-button-second: hsla(194, 97%, 31%, 1);
+   --bg-button-second-hover: rgb(2, 101, 132);
+}
+
+
+.hide {
+   display: none;
+   translate: 0;
+}
+
+.sound button.Deactive {
+   background-color: var(--bg-button-second);
+}
+
+.sound button.Deactive:hover {
+   transform: scale(1.1);
+   background-color: var(--bg-button-second-hover);
+}
+
+.container {
+   height: 100vh;
+   
+   display: flex;
+   gap: 10rem;
+
+   align-items: center;
+   justify-content: center;
+   margin: 0 1rem 0 1rem;
+      
+}
+.buttonsClock {
+   margin-top: 4.8rem;
+   display: flex;
+   gap: 4rem;
+   align-self: center;
+}
+
+.buttonsClock button img{
+   width: 4.8rem;
+   height: 4.8rem;
+}
+
+.buttonsClock button {
+   background: transparent;
+   border: none;
+   transition: transform .5s;
+   cursor: pointer;
+}
+
+.buttonsClock button:hover {
+   transform: scale(1.1);
+}
+
+
+.sound {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 3.2rem;
+}
+
+.sound button {
+   padding: 4.8rem;
+   background: var(--bg-button-first);
+   border: none;
+   border-radius: 2.4rem;
+
+   transition: all .5s;
+   cursor: pointer;
+}
+
+.sound button:hover {
+   transform: scale(1.1);
+   background: var(--bg-button-first-hover);
+}
+
+.timer span {
+   font-family: var(--font-bory);
+   color: var(--font-color);
+
+   font-size: clamp(4rem, 9rem + 4vh, 12.6rem);
+   line-height: 10.7rem;
+}
+
+
+
+@media (max-width: 850px) {
+
+   .body {
+      display: grid;
+      height: 100vh;
+   }
+   
+   .container {
+      flex-direction: column;
+      gap: 5rem;
+   }
+   
+   .timer span {
+      font-family: var(--font-bory);
+      color: var(--font-color);
+
+      font-size: clamp(4rem, 10rem + 7vh, 15.6rem);
+      line-height: 10.7rem;
+   }
+
+   .buttonsClock button img{
+      width: 6rem;
+      height: 6rem;
+   }
+
+   .sound button {
+      padding: 6rem;
+      background: var(--bg-button-first);
+      border: none;
+      border-radius: 2.4rem;
+   
+      transition: all .5s;
+      cursor: pointer;
+   }
+   
+   .clock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   
+   
+}
+
+
+@media (max-width: 600px) {
+
+   .body {
+      display: grid;
+      height: 100vh;
+   }
+   
+   .container {
+      flex-direction: column;
+      gap: 5rem;
+   }
+   
+   .timer span {
+      font-family: var(--font-bory);
+      color: var(--font-color);
+
+      font-size: clamp(2rem, 9.5rem + 3vh, 12.6rem);
+      line-height: 10.7rem;
+   }
+
+   .buttonsClock button img{
+      width: 4.8rem;
+      height: 4.8rem;
+   }
+
+   .sound button {
+      padding: 4.8rem;
+      background: var(--bg-button-first);
+      border: none;
+      border-radius: 2.4rem;
+   
+      transition: all .5s;
+      cursor: pointer;
+   }
+   
+   .clock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   
+}
+
+
+
+
