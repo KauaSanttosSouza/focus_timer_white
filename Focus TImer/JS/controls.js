@@ -52,9 +52,6 @@ export default function control({
    }
    function getMinutes() {
       let newMinutes = prompt('Qual é o tempo?')
-      if (!newMinutes) {
-         return false
-      }
       return newMinutes
    }
 
