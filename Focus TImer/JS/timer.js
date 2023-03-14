@@ -69,6 +69,20 @@ export default function time({
    }
    upFive()
    
+    function upFive(){
+      buttonUp.addEventListener('click', function() {
+         let minutes = Number(minutesDisplay.textContent)   
+         if(minutes === undefined){
+            alert('set um tempo')
+         } else {
+            minutes += 5
+            updateNewMinutes(minutes)
+            newMinutes = minutes
+         }
+      })
+   }
+   upFive()
+   
    function subFive(){
       buttonDown.addEventListener('click', function(){
             let minutes = Number(minutesDisplay.textContent)
