@@ -3,7 +3,7 @@
 Este código se trata de uma aplicação web de cronômetro, onde o usuário pode definir um tempo para focar em suas atividades e ainda ativar sons de fundo de acordo com a sua preferência.
 
 <p align="center" > 
-<img src="https://user-images.githubusercontent.com/113460644/235221301-76d2d99e-f163-4ce5-b5f3-61765c437e88.gif" width="800rem">
+<img src="https://user-images.githubusercontent.com/113460644/235311889-c04df7de-7168-4ada-b6aa-3418f300b7c4.gif" width="800rem">
 </p>
 
 ##
